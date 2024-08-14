@@ -34,11 +34,14 @@ def parse_restaurant_data(html_content):
         dinner_menu_55 = bool(has_menu_option('$55 Dinner Menu'))
         dinner_menu_65 = bool(has_menu_option('$65 Dinner Menu'))
 
+        def clean_text(text):
+            return ' '.join(text.replace('\n', ' ').split())
         # Create a dictionary for the restaurant
         restaurant_data = {
-            "name": name,
+            "name": clean_text(name),
             "link": link,
-            "cuisine": cuisine,
+            "cuisine": clean_text(cuisine),
+            "neighborhood": clean_text(neighborhood),
             "drinkPairing": drink_pairing,
             "brunchMenu25": brunch_menu_25,
             "brunchMenu25Url": "",
