@@ -23,24 +23,24 @@ def parse_menu_urls(html_content, restaurant):
             if restaurant['brunchMenu25']:
                 restaurant['brunchMenu25Url'] = menu_url
                 menu_found = True
-            elif restaurant['brunchMenu35']:
+            if restaurant['brunchMenu35']:
                 restaurant['brunchMenu35Url'] = menu_url
                 menu_found = True
         elif "Lunch" in menu_div.find('img')['alt']:
             if restaurant['lunchMenu25']:
                 restaurant['lunchMenu25Url'] = menu_url
                 menu_found = True
-            elif restaurant['lunchMenu35']:
+            if restaurant['lunchMenu35']:
                 restaurant['lunchMenu35Url'] = menu_url
                 menu_found = True
         elif "Dinner" in menu_div.find('img')['alt']:
             if restaurant['dinnerMenu40']:
                 restaurant['dinnerMenu40Url'] = menu_url
                 menu_found = True
-            elif restaurant['dinnerMenu55']:
+            if restaurant['dinnerMenu55']:
                 restaurant['dinnerMenu55Url'] = menu_url
                 menu_found = True
-            elif restaurant['dinnerMenu65']:
+            if restaurant['dinnerMenu65']:
                 restaurant['dinnerMenu65Url'] = menu_url
                 menu_found = True
 
