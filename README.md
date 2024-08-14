@@ -14,3 +14,13 @@ pip install requests folium geopy beautifulsoup4
 ```
 
 Make sure you have pip installed before running the command.
+
+## How to Run
+
+1. Navigate to https://www.ramw.org/restaurantweek
+2. Expand all restaurant options (there are around 380, so it will take a while)
+3. Open up DevTools and copy the HTML
+4. Replace what is in [restaurants.html](./restaurants.html) with the copied data
+5. Run [restaurant_parser.py](./restaurant_parser.py)
+6. This generates a detailed list of restaurants in [restaurants.json](./restaurants.json), validate the data
+7.
