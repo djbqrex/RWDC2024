@@ -23,4 +23,6 @@ Make sure you have pip installed before running the command.
 4. Replace what is in [restaurants.html](./restaurants.html) with the copied data
 5. Run [restaurant_parser.py](./restaurant_parser.py)
 6. This generates a detailed list of restaurants in [restaurants.json](./restaurants.json), validate the data
-7.
+7. Run [menu_parser.py](./menu_parser.py) to scrape menu's off ramw website
+8. Update any data that was missed in [restaurants.json](./restaurants.json)
+9. Run [main.py](./main.py) which will query against the google maps API, and generate a map with all the data
